@@ -43,6 +43,7 @@ export default function Home() {
           <img 
           className='h-10 w-10 rounded-full filter grayscale hover:grayscale-0
           cursor-pointer'
+          loading='lazy'
           src='https://bit.ly/37UsMyW' alt=''/>
         </div>
       </footer>
