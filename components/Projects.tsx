@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 
 function Projects() {
@@ -11,6 +12,7 @@ function Projects() {
             id: 1,
             title: 'Netflix clone',
             image: '../netflix.png',
+            href: 'https://netflix-clone-dun-gamma.vercel.app/',
             summary: 'Netflix app that has a log in and log out authentication with google. it has a beautiful home screen with all the movies looking just like Netflix. There is also a subscription where you can see your active monthly subscription. We also use stripe payments for the monthly Netflix Subscription!',
 
         },
@@ -18,30 +20,35 @@ function Projects() {
             id: 2,
             title: 'Amazon clone',
             image: '../amazon.png',
+            href: '',
             summary: 'Amazon clone its web based where one can shop online, add to basket, remove from basket and stripe payment method.',
         },
         {
             id: 3,
             title: 'Medium clone',
             image: '../medium.png',
+            href: '',
             summary: 'Medium is an open platform where readers find dynamic thinking, and where expert and undiscovered voices can share their writing on any topic.',
         },
         {
             id: 4,
             title: 'Hulu clone',
             image: '../hulu.png',
+            href: '',
             summary: 'Hulu app that has a log in and log out authentication with google. it has a beautiful home screen with all the movies looking just like Hulu. There is also a subscription where you can see your active monthly subscription. We also use stripe payments for the monthly Netflix Subscription!',
         },
         {
             id: 5,
             title: 'Google clone',
             image: '../google.png',
+            href: 'https://google-clone-omega-tawny.vercel.app/',
             summary: 'A replica of Google search engine',
         },
         {
             id: 6,
             title: 'AirBnB clone',
             image: '../airbnb.png',
+            href: '',
             summary: 'AirBnB web app just like the original one it offers short term stay. It offers online marketplace that connects people who want to rent out their homes with people who are looking for accommodations in specific locales.',
         }
     ]
@@ -64,6 +71,7 @@ function Projects() {
                 key={i}
                 className='w-screen flex-shrink-0 snap-center flex flex-col 
                 space-y-5 items-center justify-center md:p-44 p-20 h-screen'>
+                    <a href={project?.href}>
                     <motion.img
                     initial={{
                         y:300,
@@ -74,6 +82,7 @@ function Projects() {
                     viewport={{once:true}}
                     src={project?.image}
                     />
+                    </a>
                     <div className='space-y-10 px:0 md:px-10 max-w-6xl'>
                         <h4 className=' font-semibold text-center'>
                             <span className='underline decoration-[#F7AB0A]/50'>Case Study {i + 1} of {projects.length}: 
