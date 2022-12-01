@@ -17,7 +17,7 @@ export default function Home() {
     scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80'>
       <Head>
         <title>Victors Portfolio</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="https://bit.ly/3AZ3Phj" />
       </Head>
       {/*header */}
       <Header/>
