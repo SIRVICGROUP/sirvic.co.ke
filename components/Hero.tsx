@@ -2,6 +2,7 @@
 import React from 'react'
 import {  Cursor, useTypewriter } from 'react-simple-typewriter'
 import Link from 'next/link'
+import Image from 'next/image'
 type Props = {}
 
 function Hero({}: Props) {
@@ -17,10 +18,12 @@ function Hero({}: Props) {
   return (
     <div  className='h-screen flex flex-col space-y-8 items-center justify-center text-center
     overflow-hidden'>
-        <img 
+        <Image 
         loading='lazy'
         className='relative rounded-full h-32 w-32 mx-auto object-fit'
-        src='../profile.jpg'
+        src='https://bit.ly/3FjYoMB'
+        width={100}
+        height={100}
          alt=''
          />
         <div className='z-20'>

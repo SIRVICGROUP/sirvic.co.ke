@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
+import Image from 'next/image'
 import Link from 'next/link'
 import About from '../components/About'
 import Contact from '../components/Contact'
@@ -40,11 +41,13 @@ export default function Home() {
       <Link href='#hero'>
       <footer className='sticky bottom-20 w-full cursor-pointer'>
         <div className='flex items-center justify-center'>
-          <img 
+          <Image 
           className='h-10 w-10 rounded-full filter grayscale hover:grayscale-0
           cursor-pointer'
-          loading='lazy'
-          src='https://bit.ly/37UsMyW' alt=''/>
+          src='https://bit.ly/37UsMyW'
+          height={100} 
+          width={100}
+          alt=''/>
         </div>
       </footer>
       </Link>

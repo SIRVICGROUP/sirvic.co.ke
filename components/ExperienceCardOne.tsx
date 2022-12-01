@@ -44,7 +44,7 @@ function ExperienceCard() {
   flex-shrink-0 w-[400px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] 
   p-10 opacity-40 hover:opacity-100 cursor-pointer transition-opacity
   duration-200 overflow-hidden'>
-    <motion.img 
+    <motion.img
      initial={{
       y: -100,
       opacity: 0,
