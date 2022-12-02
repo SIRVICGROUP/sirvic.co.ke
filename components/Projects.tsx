@@ -12,7 +12,7 @@ function Projects() {
             id: 1,
             title: 'Netflix clone',
             image: '../netflix.png',
-            href: 'https://netflix-clone-dun-gamma.vercel.app/',
+            href: 'https://nf-clone-tol7.vercel.app/',
             summary: 'Netflix app that has a log in and log out authentication with google. it has a beautiful home screen with all the movies looking just like Netflix. There is also a subscription where you can see your active monthly subscription. We also use stripe payments for the monthly Netflix Subscription!',
 
         },
