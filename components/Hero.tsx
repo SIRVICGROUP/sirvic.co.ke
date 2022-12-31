@@ -3,7 +3,6 @@ import React from 'react'
 import {  Cursor, useTypewriter } from 'react-simple-typewriter'
 import Link from 'next/link'
 import Image from 'next/image'
-import Confetti from 'react-confetti'
 
 type Props = {}
 
