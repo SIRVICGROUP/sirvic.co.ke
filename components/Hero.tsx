@@ -3,14 +3,21 @@ import React from 'react'
 import {  Cursor, useTypewriter } from 'react-simple-typewriter'
 import Link from 'next/link'
 import Image from 'next/image'
+import Confetti from 'react-confetti'
+
 type Props = {}
 
 function Hero({}: Props) {
+  const src ='https://bit.ly/3IgkwsX'
     const [text, count] = useTypewriter({
         words: [
-        `Hi, My Name is Victor`,
-        'Guy-who-loves-Coffee.tsx', 
-        '<ButLovesToCodeMore/>',
+        `With every end, comes a new beginning.`,
+        'May God 🙏 fill this New Year with great memories, ', 
+        'Continue to pursue your dreams and aspirations.',
+        'If it had not been the Lord who was on our side,',
+        'now may Israel say 🙏 Psalms 124',
+        'Wishing you ❣️ a prosperous 2023',
+        'Yours truly SIRVIC',
     ],
     loop: true,
     delaySpeed: 2000,
@@ -18,14 +25,24 @@ function Hero({}: Props) {
   return (
     <div  className='h-screen flex flex-col space-y-8 items-center justify-center text-center
     overflow-hidden'>
-        <Image 
+      <Confetti/>
+        {/* <Image 
         loading='lazy'
         className='relative rounded-full h-32 w-32 mx-auto object-fit'
-        src='https://bit.ly/3FjYoMB'
+        src='http://bit.ly/3jz6Fnf'
         width={100}
         height={100}
          alt=''
-         />
+         /> */}
+      <video 
+      loop={true}
+      width="100%"
+      muted={true}
+      autoPlay={true}
+      className='relative rounded-full h-32 w-32 mx-auto object-fit'
+       >
+      <source src={src} type="video/mp4" />
+    </video>
         <div className='z-20'>
             <h2 className='text-sm uppercase text-gray-500
             pb-2 tracking-[15px]'>RF & MW ENGINEER</h2>
